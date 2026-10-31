@@ -20,9 +20,11 @@
   </style>
 </head>
 <body>
-      <!-- Header -->
+      <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
     <header>
-      <img src="images/logo.png" alt="Maplebrook Public Library Logo" width="100" height="100">
+      <img src="images/logo.png" alt="Maplebrook Public Library Logo" width="200" height="40">
 
        <!-- Main Navigation -->
     <nav aria-label="Main">
@@ -33,13 +35,18 @@
       <a href="Blog.html">Blog</a>
       <a href="Events.html">Events</a>
     </nav>
+    <search>
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </search>
     <hr>
     </header>
 
-    <!-- Form Section -->
+<!-- Main Content -->
+    <main id="main">
     <section>
-      <h2>Register for a Library Card</h2>
-      
+      <h1>Register for a Library Card</h1>
+      <!-- Form -->
       <form action="submit_registration.php" method="POST">
         <label for="Firstname">First Name:</label>
         <input type="text" id="Firstname" name="Firstname" required>
@@ -61,6 +68,7 @@
         <button type="submit">Submit</button>
       </form>
       <hr>
+      
 <!-- Data table -->
  <h2>Library Opening Hours</h2>
       <table>
@@ -115,6 +123,17 @@
         </tfoot>
       </table>
     </section>
-
+</main>
+<hr>
+<!-- main footer -->
+    <footer>
+      <h3>Maplebrook Library</h3>
+      <a href="About-us.html">About us</a>
+      <a href="Contact-us.html">Contact us</a>
+      <a href="FAQ.html">FAQs</a>
+      <a href="Meeting-Rooms.html">Meeting Rooms</a>
+      <a href="Opening-Hours.html">Opening Hours</a>
+      <p>Copy Rights/2026</p>
+    </footer>
 </body>
 </html>
